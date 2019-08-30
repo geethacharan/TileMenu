@@ -1,0 +1,11 @@
+.THIS .topbar {
+    border-top: 6px solid #247 !important;
+}
+.THIS .topbar.topbar-blue{
+    border-color: #2477cc !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.THIS a:hover{
+    text-decoration:none;
+}

@@ -1,0 +1,3 @@
+<design:component label="Option 1">
+    <design:attribute name="tileOptions" label="different Tiles" datasource="apex://MyCustomPicklist"/>
+</design:component>

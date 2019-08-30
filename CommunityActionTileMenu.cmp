@@ -1,0 +1,57 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" controller="MyCustomPicklist" access="global" >
+    <aura:attribute name="tileOptions" type="string" access="global"/>
+    <aura:attribute name="dumTiles" type="MyCustomPicklist.MyClass[]" access="global"/>
+    <lightning:navigation aura:id="navService"/>
+    <div class="slds">
+        <ul class="slds-grid slds-wrap slds-list_horizontal slds-p-top_small" onclick="{!c.handleClick}">
+            <li class="slds-col slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-3 slds-large-size_2-of-12 slds-p-horizontal_x-small" style="height: 8.25rem;text-align:center;">
+                <a href="javascript:void(0);" data-menu-item-id="membermaintenance">
+                    <div style="height: 4.75rem;">
+                    	<lightning:icon iconName="standard:service_crew" alternativeText="Approved"  size="large"/>
+                    </div>
+                    <div class="slds-text-heading_small slds-p-top_xx-small">Member Maintenance</div>
+                </a>
+            </li>
+            <li class="slds-col slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-3 slds-large-size_2-of-12 slds-p-horizontal_x-small" style="height: 8.25rem;text-align:center;">
+                <a href="javascript:void(0);" data-menu-item-id="billpay">
+                    <div style="height: 4.75rem;">
+                    	<lightning:icon iconName="standard:currency" alternativeText="Approved"  size="large"/>
+                    </div>
+                    <div class="slds-text-heading_small slds-p-top_xx-small">Pay Bills</div>
+                </a>
+            </li>
+            <li class="slds-col slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-3 slds-large-size_2-of-12 slds-p-horizontal_x-small" style="height: 8.25rem;text-align:center;">
+                <a href="javascript:void(0);" data-menu-item-id="policydocuments">
+                	<div style="height:4.75rem;">
+                    	<lightning:icon iconName="doctype:box_notes" alternativeText="Approved"  size="large"/>
+                    </div>
+                    <div class="slds-text-heading_small slds-p-top_xx-small">Policy Documents</div>
+                </a>
+            </li>
+            <li class="slds-col slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-3 slds-large-size_2-of-12 slds-p-horizontal_x-small" style="height: 8.25rem;text-align:center;">
+                <a href="javascript:void(0);" data-menu-item-id="claimforms">
+                	<div style="height:4.75rem;">
+                    	<lightning:icon iconName="standard:contract" alternativeText="Approved"  size="large"/>
+                    </div>
+                    <div class="slds-text-heading_small slds-p-top_x-small">Claim Forms</div>
+                </a>
+            </li>
+            <li class="slds-col slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-3 slds-large-size_2-of-12 slds-p-horizontal_x-small" style="height: 8.25rem;text-align:center;">
+                <a href="javascript:void(0);" data-menu-item-id="distributetoemployees">
+                	<div style="height:4.75rem;">
+                    	<lightning:icon iconName="action:new_group" alternativeText="Approved"  size="large"/>
+                    </div>
+                    <div class="slds-text-heading_small slds-p-top_x-small">Distribute to Employees</div>
+                </a>
+            </li>
+            <li class="slds-col slds-small-size_1-of-2 slds-medium-size_1-of-3 slds-size_1-of-1 slds-large-size_2-of-12 slds-p-horizontal_x-small" style="height: 8.25rem;text-align:center;">
+                <a href="javascript:void(0);" data-menu-item-id="knowledgecenter">
+                	<div style="height:4.75rem;">
+                    	<lightning:icon iconName="standard:article" alternativeText="Approved"  size="large"/>
+                    </div>
+                    <div class="slds-text-heading_small slds-p-top_x-small">Knowledge Center</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</aura:component>
